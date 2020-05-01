@@ -11,7 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
         android:text="mes actual"
+        app:layout_constraintBottom_toTopOf="@+id/compactcalendar_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,11 +35,9 @@
 
     <com.github.sundeepk.compactcalendarview.CompactCalendarView
         android:id="@+id/compactcalendar_view"
-        android:layout_width="363dp"
+        android:layout_width="0dp"
         android:layout_height="276dp"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="76dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginBottom="12dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
