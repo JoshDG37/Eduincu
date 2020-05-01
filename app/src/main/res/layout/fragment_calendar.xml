@@ -23,7 +23,11 @@
         android:layout_height="16dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="364dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
         android:text="Eventos:"
+        app:layout_constraintBottom_toTopOf="@+id/listViewEventos"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,6 +37,8 @@
         android:layout_height="276dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         app:compactCalendarBackgroundColor="#ffe95451"
@@ -42,6 +48,8 @@
         app:compactCalendarTargetHeight="250dp"
         app:compactCalendarTextColor="#fff"
         app:compactCalendarTextSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Eventos"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,7 +57,10 @@
         android:id="@+id/listViewEventos"
         android:layout_width="413dp"
         android:layout_height="239dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="380dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

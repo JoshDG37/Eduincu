@@ -43,12 +43,14 @@ public class Settings extends Fragment {
             @Override
             public void onClick(View v) {
 
+                FirebaseAuth.getInstance().signOut();
                 closefragment();
                 getActivity().finish();
                 FirebaseAuth.getInstance().signOut();
                 Intent intent=new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
                 FirebaseAuth.getInstance().signOut();
+
 
                 //----------------------------------------------------------------hacer para importar metodos del padre o alguna forma para poder hacer el logout
 
