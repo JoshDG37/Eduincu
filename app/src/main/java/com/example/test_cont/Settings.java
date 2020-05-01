@@ -1,6 +1,7 @@
 package com.example.test_cont;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -41,9 +42,13 @@ public class Settings extends Fragment {
         butlogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                //closefragment();
 
+                closefragment();
+                getActivity().finish();
+                FirebaseAuth.getInstance().signOut();
+                Intent intent=new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+                FirebaseAuth.getInstance().signOut();
 
                 //----------------------------------------------------------------hacer para importar metodos del padre o alguna forma para poder hacer el logout
 
