@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "906756531975",
+    "firebase_url": "https://eduincu-e2d3b.firebaseio.com",
+    "project_id": "eduincu-e2d3b",
+    "storage_bucket": "eduincu-e2d3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906756531975:android:a861ace1ed1d3689f087a2",
+        "android_client_info": {
+          "package_name": "com.example.test_cont"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906756531975-4g21nq6u2f36mh0iq9np3sslpvrvsml9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.test_cont",
+            "certificate_hash": "e0a4a0aef5b5466531e0139d7df716d64b2fe777"
+          }
+        },
+        {
+          "client_id": "906756531975-8l3sms1iekv8lff2urcq9b1oqrbdjmk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD46Gi5x2U2F1f5Dnv4pZNmKGjq6sGED4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906756531975-8l3sms1iekv8lff2urcq9b1oqrbdjmk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
