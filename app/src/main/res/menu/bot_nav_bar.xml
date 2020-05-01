@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Home"
+    <item android:title="Inicio"
         android:id="@+id/home"
         android:icon="@drawable/ic_casa"/>
-    <item android:title="Calendar"
+    <item android:title="Calendario"
         android:id="@+id/calendar"
         android:icon="@drawable/ic_calendario"/>
-    <item android:title="Files"
+    <item android:title="Archivos"
         android:id="@+id/files"
         android:icon="@drawable/ic_cohete"/>
     <item android:title="Chat"
         android:id="@+id/chat"
         android:icon="@drawable/ic_mensaje"/>
-    <item android:title="Settings"
+    <item android:title="Ajustes"
         android:id="@+id/settings"
         android:icon="@drawable/ic_menu"/>
 </menu>
