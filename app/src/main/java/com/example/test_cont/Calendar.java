@@ -144,7 +144,6 @@ public class Calendar extends Fragment {
         mDatabase.orderByChild( "fecha").addChildEventListener( new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                //String color = dataSnapshot.child( "color" ).getValue().toString();
                 String fecha = dataSnapshot.child( "fecha" ).getValue().toString();
                 String evento = dataSnapshot.child( "evento" ).getValue().toString();
                 eventos.add(new Event( Color.BLUE, convertirMilli( fecha ), evento ) );
