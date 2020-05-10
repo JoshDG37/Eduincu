@@ -6,61 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".Calendar">
 
+
     <TextView
         android:id="@+id/meses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="413dp"
+        android:layout_height="74dp"
+        android:background="#303841"
+        android:gravity="center"
         android:text="mes actual"
-        app:layout_constraintBottom_toTopOf="@+id/compactcalendar_view"
+        android:textColor="#fff"
+        android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/Eventos"
         android:layout_width="340dp"
         android:layout_height="16dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="364dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="8dp"
         android:text="Eventos:"
-        app:layout_constraintBottom_toTopOf="@+id/listViewEventos"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.github.sundeepk.compactcalendarview.CompactCalendarView
         android:id="@+id/compactcalendar_view"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="276dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="74dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        app:compactCalendarBackgroundColor="#ffe95451"
-        app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
-        app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+        app:compactCalendarBackgroundColor="#303841"
+        app:compactCalendarCurrentDayBackgroundColor="#45505c"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#303841"
         app:compactCalendarMultiEventIndicatorColor="#fff"
         app:compactCalendarTargetHeight="250dp"
         app:compactCalendarTextColor="#fff"
         app:compactCalendarTextSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/Eventos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/listViewEventos"
-        android:layout_width="0dp"
+        android:layout_width="395dp"
         android:layout_height="239dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="380dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
