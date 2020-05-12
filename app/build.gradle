@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -42,4 +43,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:21.4.3'
 
 
+    implementation 'com.github.sundeepk:compact-calendar-view:1.9.1' //Implementacion para el calendario
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.5'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'com.github.sundeepk:compact-calendar-view:1.9.1'
 }
+apply plugin: 'com.google.gms.google-services'

@@ -1,7 +1,12 @@
 package com.example.test_cont;
 
+
 import android.content.Intent;
 import android.net.Uri;
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -37,10 +43,12 @@ import java.util.HashMap;
 import static android.app.Activity.RESULT_OK;
 
 
+
 /**
  * A simple {@link Fragment} subclass.
  */
 public class Settings extends Fragment {
+
     private EditText username;
     private Button send, but_logout;
     private ImageView profile_image;
@@ -51,6 +59,7 @@ public class Settings extends Fragment {
     private DatabaseReference rootRef;
     private static final int GalleryPick=1;
     private StorageReference userProfileImageRef;
+
     public Settings() {
         // Required empty public constructor
     }
@@ -60,6 +69,7 @@ public class Settings extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
+
         rootView= inflater.inflate(R.layout.fragment_settings, container, false);
 
         mAuth =FirebaseAuth.getInstance();
@@ -104,6 +114,7 @@ public class Settings extends Fragment {
                 mAuth.signOut();
                 Intent logingIntent=new Intent(rootView.getContext(),MainActivity.class);
                 startActivity(logingIntent);
+
 
 
                 //----------------------------------------------------------------hacer para importar metodos del padre o alguna forma para poder hacer el logout
@@ -230,6 +241,7 @@ public class Settings extends Fragment {
 
             }
         });
+
 
     }
 }
