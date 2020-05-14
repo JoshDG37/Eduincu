@@ -6,18 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="174dp"
-        android:text="settings"
-        android:textSize="30dp"
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="220dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="53dp"
+        android:src="@drawable/ic_account"
+        app:layout_constraintBottom_toTopOf="@+id/send"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/ic_email"
+        app:layout_constraintBottom_toTopOf="@+id/but_logout"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+
+    </Button>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="69dp"
+        android:hint="Nombre y Apellido"
+        android:orientation="horizontal"
+        android:padding="17dp"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/send" />
 
     <Button
         android:id="@+id/but_logout"
@@ -30,5 +62,7 @@
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

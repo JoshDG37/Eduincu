@@ -37,12 +37,14 @@ public class Files extends Fragment  {
         View view = inflater.inflate(R.layout.fragment_files, container, false);
 
 
+
         mrecyclerView= view.findViewById(R.id.rec_view1);
         mrecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         listaficheros = new ArrayList<directorio_link>();
 
         dataRef= FirebaseDatabase.getInstance().getReference().child("Carpetas ficheros");
         dataRef.addListenerForSingleValueEvent(valueEventListener);
+
 
         return view;
     }
