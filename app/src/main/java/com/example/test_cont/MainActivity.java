@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,18 +23,26 @@ public class MainActivity extends AppCompatActivity {
     private EditText etEmail, etPassword;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private ImageView imgView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-
+        imgView=findViewById(R.id.imageView2);
         mAuth=FirebaseAuth.getInstance();
         etEmail = findViewById(R.id.et_email);
         etPassword = findViewById(R.id.et_password);
         but1 = findViewById(R.id.bEntrar);
 
+
+        imgView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Educate Inculto", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         mAuthListener= new FirebaseAuth.AuthStateListener() {
