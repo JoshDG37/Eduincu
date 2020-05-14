@@ -47,7 +47,7 @@ public class Calendar extends Fragment {
 
         //Esto es para la fecha actual
         String mesActual = new SimpleDateFormat("MMMM").format(new Date());
-        etMeses.setText( mesActual );
+        etMeses.setText( mesActual+"-2020" );
 
         ArrayList<Event> eventos = new ArrayList<>() ;
         //Llamo al metodo para actualizar la BD con la info del mes actual
