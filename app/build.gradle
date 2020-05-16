@@ -44,6 +44,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.1'
     implementation 'com.google.firebase:firebase-messaging:20.1.5'
     implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

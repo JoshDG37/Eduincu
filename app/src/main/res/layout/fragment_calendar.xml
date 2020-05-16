@@ -9,14 +9,14 @@
 
     <TextView
         android:id="@+id/meses"
-        android:layout_width="413dp"
+        android:layout_width="0dp"
         android:layout_height="74dp"
         android:background="#303841"
         android:gravity="center"
         android:text="mes actual"
-        android:textColor="#fff"
-        android:textSize="23dp"
         android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         app:compactCalendarBackgroundColor="#303841"
-        app:compactCalendarCurrentDayBackgroundColor="#45505c"
+        app:compactCalendarCurrentDayBackgroundColor="#CDCECF"
         app:compactCalendarCurrentSelectedDayBackgroundColor="#303841"
         app:compactCalendarMultiEventIndicatorColor="#fff"
         app:compactCalendarTargetHeight="250dp"
@@ -52,7 +52,7 @@
 
     <ListView
         android:id="@+id/listViewEventos"
-        android:layout_width="395dp"
+        android:layout_width="0dp"
         android:layout_height="239dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="380dp"
