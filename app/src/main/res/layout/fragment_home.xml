@@ -23,6 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
             android:background="#FFF"
             android:gravity="center"
             android:padding="5dp"
@@ -46,6 +47,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
             android:layout_marginTop="1dp"
             android:layout_marginRight="1dp"
             android:background="#FFF"
@@ -92,7 +94,7 @@
             app:layout_rowSpan="2" />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="62dp"
             android:layout_height="70dp"
             android:layout_margin="1dp"
             android:background="#FFF"
@@ -139,7 +141,7 @@
             app:layout_row="1" />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="62dp"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:background="#FFF"
