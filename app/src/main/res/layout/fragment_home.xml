@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="74dp"
         android:background="#303841"
         android:gravity="center"
@@ -19,6 +19,9 @@
         android:textSize="18dp"
         app:layout_column="0"
         app:layout_columnSpan="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_row="0" />
 
     <androidx.gridlayout.widget.GridLayout
