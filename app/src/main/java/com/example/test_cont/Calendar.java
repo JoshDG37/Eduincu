@@ -126,8 +126,8 @@ public class Calendar extends Fragment {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 String fecha = dataSnapshot.child( "fecha" ).getValue().toString();
                 String evento = dataSnapshot.child( "evento" ).getValue().toString();
-                eventos.add(new Event( Color.WHITE, convertirMilli( fecha ), evento ) );
-                compactCalendarView.addEvent(new Event( Color.WHITE, convertirMilli( fecha ), evento )  );
+                eventos.add(new Event( Color.BLACK, convertirMilli( fecha ), evento ) );
+                compactCalendarView.addEvent(new Event( Color.BLACK, convertirMilli( fecha ), evento )  );
 
                 //Para mostrar el texto en el listView "Evento: Fecha"
                 String infoDia =evento+": "+fecha;
