@@ -7,18 +7,30 @@
     tools:context=".Calendar">
 
 
+    <Toolbar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#303841"
+        />
+
     <TextView
         android:id="@+id/meses"
-        android:layout_width="0dp"
-        android:layout_height="74dp"
-        android:background="#303841"
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="141dp"
         android:gravity="center"
-        android:text="mes actual"
+        android:text="Mes actual"
         android:textAllCaps="true"
-        android:textColor="#fff"
-        android:textSize="18dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
