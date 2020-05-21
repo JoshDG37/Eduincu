@@ -77,7 +77,7 @@ public class ChatActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ChatActivity.this, ChatsFragment.class));
+                finish();
             }
         });
 
