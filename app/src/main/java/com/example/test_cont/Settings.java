@@ -146,6 +146,7 @@ public class Settings extends Fragment {
                     firebaseUri.addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
+                            //meter la imagen en database
                             final String downloadUrl = uri.toString();
                             rootRef.child("Users").child(currentUserID).child("image").setValue(downloadUrl).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
