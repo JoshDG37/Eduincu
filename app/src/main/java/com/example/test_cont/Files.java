@@ -59,7 +59,10 @@ public class Files extends Fragment  {
                 for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
                     directorio_link fichero = dataSnapshot1.getValue(directorio_link.class);
                     int empieza=fichero.getNombreCarpeta().indexOf("-");
+                    int longitudNombre=fichero.getNombreCarpeta().length();
                     String asignatura=fichero.getNombreCarpeta().substring(0,empieza);
+
+                    String nombreCarp=fichero.getNombreCarpeta().substring(empieza+1,longitudNombre);
 
                     if(!asignatura.equals(aux)){
                         aux=asignatura;
@@ -67,8 +70,11 @@ public class Files extends Fragment  {
                         listaficheros.add(new directorio_link("","","-"));
                         listaficheros.add(new directorio_link("","","-"));
                         listaficheros.add(injectar);
+
+                        fichero.setNombreCarpeta(nombreCarp);
                         listaficheros.add(fichero);
                     }else{
+                        fichero.setNombreCarpeta(nombreCarp);
                         listaficheros.add(fichero);
                     }
 
