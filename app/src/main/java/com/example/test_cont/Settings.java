@@ -204,10 +204,10 @@ public class Settings extends Fragment {
                 }
                 else if((dataSnapshot.exists()) && (dataSnapshot.hasChild("name"))){
                     String retrieveUserName=dataSnapshot.child("name").getValue().toString();
-                    String retrieveProfile=dataSnapshot.child("image").getValue().toString();
+                    //String retrieveProfile=dataSnapshot.child("image").getValue().toString();
 
                     username.setText(retrieveUserName);
-                    Picasso.get().load(retrieveProfile).into(profile_image);
+                    //Picasso.get().load(retrieveProfile).into(profile_image);
                 }
                 else{
                     Toast.makeText(getActivity(),"Por favor actualiza tu perfil",Toast.LENGTH_SHORT).show();
