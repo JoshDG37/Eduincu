@@ -25,8 +25,8 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="56dp"
         android:layout_below="@+id/profile_image"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="71dp"
@@ -65,6 +65,7 @@
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/send" />
 
