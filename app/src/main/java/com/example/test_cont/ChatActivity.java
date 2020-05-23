@@ -30,9 +30,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Calendar;
 import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -57,6 +59,8 @@ public class ChatActivity extends AppCompatActivity {
     private LinearLayoutManager linearLayoutManager;
     private MessageAdapter mensajeAdapter;
     private RecyclerView userMessageList;
+
+    private String Time, Date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,6 +123,16 @@ public class ChatActivity extends AppCompatActivity {
         linearLayoutManager= new LinearLayoutManager(this);
         userMessageList.setLayoutManager(linearLayoutManager);
         userMessageList.setAdapter(mensajeAdapter);
+
+        //FECHA Y HORA
+
+        Calendar calendar = Calendar.getInstance();
+
+        SimpleDateFormat currentDate = new SimpleDateFormat("dd/MM/YYYY");
+        Date = currentDate.format(calendar.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm");
+        Time = currentTime.format(calendar.getTime());
 
 
     }
@@ -186,6 +200,8 @@ public class ChatActivity extends AppCompatActivity {
             messageTextBody.put("from", messageSenderID);
             messageTextBody.put("to", messageReceiverID);
             messageTextBody.put("messageID", messagePushID);
+            messageTextBody.put("time", Time);
+            messageTextBody.put("date", Date);
 
             Map messageBodyDetails = new HashMap();
             messageBodyDetails.put(messageSenderRef + "/" + messagePushID, messageTextBody);
