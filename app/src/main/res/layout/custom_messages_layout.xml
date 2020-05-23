@@ -26,8 +26,7 @@
         android:padding="10dp"
         android:text="Mensaje del receptor"
         android:textColor="@android:color/black"
-        android:textSize="14sp"
-        android:textStyle="bold">
+        android:textSize="14sp">
 
     </TextView>
 
@@ -43,7 +42,6 @@
         android:padding="10dp"
         android:text="Mensaje del remitente"
         android:textColor="@android:color/black"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textSize="14sp" />
 
 </RelativeLayout>

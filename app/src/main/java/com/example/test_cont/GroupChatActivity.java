@@ -141,11 +141,11 @@ public class GroupChatActivity extends AppCompatActivity {
 
         }else{
             java.util.Calendar calForDate= java.util.Calendar.getInstance();
-            SimpleDateFormat currentDateFormat=new SimpleDateFormat("MMM dd, yyyy");
+            SimpleDateFormat currentDateFormat=new SimpleDateFormat("dd/MM/YYYY");
             currentDate=currentDateFormat.format(calForDate.getTime());
 
             java.util.Calendar calForTime= Calendar.getInstance();
-            SimpleDateFormat currentTimeFormat=new SimpleDateFormat("hh:mm a");
+            SimpleDateFormat currentTimeFormat=new SimpleDateFormat("HH:mm");
             currentTime=currentTimeFormat.format(calForTime.getTime());
 
             HashMap<String, Object> groupMessageKey=new HashMap<>();

@@ -92,12 +92,12 @@ public class MessageAdapter  extends RecyclerView.Adapter<MessageAdapter.Message
             if (fromUserID.equals(messageSenderId)) {
                 holder.senderMessageText.setVisibility(View.VISIBLE);
                 holder.senderMessageText.setBackgroundResource(R.drawable.messages_layout);
-                holder.senderMessageText.setText(mensaje.getMensaje());
+                holder.senderMessageText.setText(mensaje.getMensaje()+ "\n \n" + mensaje.getTime() + " - " + mensaje.getDate());
             } else {
                 holder.receiverProfileImage.setVisibility(View.VISIBLE);
                 holder.receiverMessageText.setVisibility(View.VISIBLE);
                 holder.receiverMessageText.setBackgroundResource(R.drawable.messages_layout);
-                holder.receiverMessageText.setText(mensaje.getMensaje());
+                holder.receiverMessageText.setText(mensaje.getMensaje()+ "\n \n" + mensaje.getTime() + " - " + mensaje.getDate());
             }
         }
     }
