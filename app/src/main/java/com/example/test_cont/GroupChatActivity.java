@@ -3,6 +3,7 @@ package com.example.test_cont;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
@@ -32,6 +33,8 @@ public class GroupChatActivity extends AppCompatActivity {
     private EditText input_group_message;
     private ScrollView my_scroll_view;
     private TextView group_chat_text;
+    private TextView custom_profile_group;
+    private Button back2;
 
     private FirebaseAuth mAuth;
     private DatabaseReference usersRef, GroupNameRef, GroupMessageKey;
@@ -52,6 +55,8 @@ public class GroupChatActivity extends AppCompatActivity {
 
         InitializeFields();
 
+        custom_profile_group.setText(currentGroupName);
+
         GetUserInfo();
 
 
@@ -63,6 +68,12 @@ public class GroupChatActivity extends AppCompatActivity {
                 input_group_message.setText("");
 
                 my_scroll_view.fullScroll(my_scroll_view.FOCUS_DOWN);
+            }
+        });
+        back2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
@@ -105,14 +116,13 @@ public class GroupChatActivity extends AppCompatActivity {
 
 
     private void InitializeFields() {
-        mToolbar=(Toolbar) findViewById(R.id.group_chat_bar_layout);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle(currentGroupName);
 
         mandar_mensaje=(ImageButton) findViewById(R.id.mandar_mensaje);
         input_group_message=(EditText) findViewById(R.id.input_group_message);
         my_scroll_view=(ScrollView) findViewById(R.id.my_scroll_view);
         group_chat_text=(TextView) findViewById(R.id.group_chat_text);
+        back2 = (Button) findViewById(R.id.back2);
+        custom_profile_group=(TextView)findViewById(R.id.custom_profile_group);
     }
 
     private void GetUserInfo() {
